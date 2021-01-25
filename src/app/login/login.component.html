@@ -1,0 +1,36 @@
+
+
+
+
+<!--<h3 fxLayoutAlign="center center" > WELCOME!!!</h3>-->
+
+    
+<div fxLayoutAlign="center center" fxFlexFill class="main-div" class="container">
+   
+    <mat-card fxFlex="25">
+        <mat-toolbar  fxLayoutAlign="center center">Welcome!</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" >
+            <mat-form-field >
+              
+              <input matInput type="email" placeholder="Username" id="username" name="username" [(ngModel)]="username"  email required>
+            </mat-form-field>
+            <mat-form-field >
+              
+                <input  matInput type="password" placeholder="Password" id="password" name="password" [(ngModel)]="password"  minlength="6" required>
+              </mat-form-field>
+              <button mat-raised-button color="primary" type="submit" (click)="logIn()" [disabled]="!authForm.valid">Login</button>
+            
+          </form>
+          
+          
+       
+    </mat-card>
+</div>
+
+
+
+
+
+
+
+
