@@ -4,21 +4,25 @@
 
 <!--<h3 fxLayoutAlign="center center" > WELCOME!!!</h3>-->
 
-    
-<div fxLayoutAlign="center center" fxFlexFill class="main-div" class="container">
    
-    <mat-card fxFlex="25">
-        <mat-toolbar  fxLayoutAlign="center center">Welcome!</mat-toolbar>
+<div fxLayoutAlign="center center" fxFlexFill class="main-div" class="container">
+  
+   
+    <mat-card  fxFlex="25">
+        <mat-toolbar  fxLayoutAlign="center center"  class="heading">UniTech</mat-toolbar>
         <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" >
             <mat-form-field >
               
-              <input matInput type="email" placeholder="Username" id="username" name="username" [(ngModel)]="username"  email required>
+              <input matInput type="email" placeholder="Username" data-bs-placement="bottom" title="xyz@abc.com" id="username" name="username" [(ngModel)]="username"  email required>
+              
             </mat-form-field>
             <mat-form-field >
               
-                <input  matInput type="password" placeholder="Password" id="password" name="password" [(ngModel)]="password"  minlength="6" required>
+                <input  matInput type="password" [type]="hide ? 'password' : 'text'" placeholder="Password" data-bs-placement="bottom" title="min 6 characters" id="password" name="password" [(ngModel)]="password"  minlength="6" required>
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+               
               </mat-form-field>
-              <button mat-raised-button color="primary" type="submit" (click)="logIn()" [disabled]="!authForm.valid">Login</button>
+              <button mat-raised-button color="primary"  type="submit" (click)="logIn()" [disabled]="!authForm.valid">Login</button>
             
           </form>
           

@@ -1,33 +1,141 @@
-<section class="banner">
-    <div class="banner-box" >
-      <div class="intro-text">
-        <div class="intro-text-box" text="center">
-          <h1>WELCOME</h1>
+<!--Navbar start-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">UniTech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--col auto start-->
+    <div class="col-auto pull-right">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./homepage"><i class="glyphicon glyphicon-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./userpro">My Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://time.com/4679996/tech-accessories-gadgets-gift-guide-ideas/">Explore</a>
+        </li>
+        
+        <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true">
+        Services
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="./faq">Return Services</a>
+        <li><hr class="dropdown-divider"></li>
+        <a class="dropdown-item" href="./faq">Technical Services</a>
+        <li><hr class="dropdown-divider"></li>
+        <a class="dropdown-item" href="./faq">Product Support</a>
+      </div>
+    </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href=""><span class="glyphicon glyphicon-off"></span></a>
+        </li>
+       
+        
+      </ul>
+      <!--<form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+    </div>
+  </div>
+</div>
+  <!--col auto end-->
+</div>
+</nav>
+
+<!--Navbar end-->
+<br><br>
+<header>
+  <div class="container text-center">
+    
+      
+      <h2 class="top">Welcome to the help center!!!</h2>
+      
+
+      <br><br>
+
+      <div class="row " >
+        <div class="col-lg-6 mb-4 text-center">
+          <div class="card align-items-center card text-white bg-dark mb-3" style="width:26rem; height: 30rem;">
+            <img class="card-img-top " src="https://p.kindpng.com/picc/s/128-1286899_customer-service-intervention-transparent-customer-care-icon-hd.png" alt="xyz">
+            <div class="card-body ">
+              <h5 class="card-title">Raise New Service Ticket</h5>
+              
+              <a href="./ticket" mat-raised-button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click on the button to raise a new ticket"> <span class="glyphicon glyphicon-plus"></span></a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 text-center">
+          <div class="card align-items-center card text-white bg-dark mb-3 "  style="width:26rem; height: 30rem;">
+            <img class="card-img-top  " src="https://png.pngitem.com/pimgs/s/510-5107282_icon-hd-png-download.png" alt="xyz">
+            
+            <div class="card-body  ">
+              <h5 class="card-title">Check Service Ticket</h5>
+              
+              <a href="./status" mat-raised-button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click on the button to view all the tickets">My List</a>
+            </div>
+          </div>
         </div>
       </div>
-      <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="banner2" />
-    </div>
-  </section>
-
-
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <span>Customer Service Desk</span>
-        <span class="example-fill-remaining-space"></span>
-        <span class="align-center"></span>
-        <span class="example-spacer"></span>
-        <button mat-button>Contact Us</button>
-        <i class=" glyphicon glyphicon-earphone"></i>
-        <button mat-button>About Us</button>
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
     
-        
-        
-    </mat-toolbar-row>
-</mat-toolbar>
+    
 
-<br><br>
+  </div>
+</header>
 
-<button mat-raised-button color="accent" type="button" (click)="raiseTicket()">Raise a ticket</button>
-<br><br>
-<p>Welcome</p>
+
+<!--card start-->
+
+<!--card end-->
+
+<footer class="footer footer-dark bg-dark "  >
+
+    <div class=" copy container col-lg-3 mb-4 pull-left">
+      <p>
+        <span class="glyphicon glyphicon-briefcase"></span> Office Address:<br>
+        Angular Academy,TCS Interactive, India<br><br>
+        <span class="glyphicon glyphicon-phone-alt"></span> Contact Details:<br>
+        444-555-666 | 1800-456-789
+      </p>
+    </div>
+    <div class=" copy container col-lg-3 mb-4 pull-right">
+      <p><br>
+        <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2021<br>
+        Current Version 1.0.0<br>
+        
+      </p>
+    </div>
+  
+    <div class=" container   text-center">
+     
+      <div clas="row py-4 d-flex  text-center align-items-center">
+        <div class="col md-8 text-center"></div>
+        <p class="copy">Follow Us on Social Media</p>
+        <a href="https:www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https:www.twitter.com/" class="fa fa-twitter"></a>
+        <a href="https:www.google.com/" class="fa fa-google"></a>
+        <a href="https:www.linkedin.com/" class="fa fa-linkedin"></a>
+       
+        <a href="https:www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https:www.pinterest.com/" class="fa fa-pinterest"></a>
+        <a href="https:www.reddit.com/" class="fa fa-reddit"></a>
+      </div>   
+      
+     
+    </div>
+      
+   
+  
+</footer>

@@ -1,5 +1,6 @@
 
 
+import {HttpClientModule} from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -19,7 +20,14 @@ import { FormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoginComponent } from './login/login.component';
 import { TicketComponent } from './ticket/ticket.component';
-
+import { StatusComponent } from './status/status.component';
+import {MatIconModule} from '@angular/material/icon';
+import { FaqComponent } from './faq/faq.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+import { UserproComponent } from './userpro/userpro.component';
+import { EditComponent } from './edit/edit.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -30,13 +38,23 @@ import { TicketComponent } from './ticket/ticket.component';
     
     LoginComponent,
     
-    TicketComponent
+    TicketComponent,
+    
+    StatusComponent,
+    
+    FaqComponent,
+   
+    UserproComponent,
+   
+    EditComponent,
+   
+    AboutComponent
   ],
   imports: [
-    BrowserModule,MatToolbarModule,FormsModule,MatSnackBarModule,
+    BrowserModule,MatToolbarModule,FormsModule,MatSnackBarModule,MatIconModule,ReactiveFormsModule,MatSelectModule,HttpClientModule,
     AppRoutingModule,FlexLayoutModule, BrowserAnimationsModule,MatFormFieldModule,MatInputModule,MatButtonModule,MatCardModule,MatSliderModule
   ],
   providers: [MatSnackBarModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {MatIconModule }

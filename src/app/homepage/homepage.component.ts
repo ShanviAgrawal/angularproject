@@ -14,7 +14,7 @@ export class HomepageComponent  {
 
   
 
-raiseTicket(){
-  this.router.navigate(['./ticket']);
+/*raiseTicket(){
+  this.router.navigate(['./ticket']);*/
   
-}}
+}

@@ -1,21 +1,237 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-    <li class="nav-item active">
-    <a class="nav-link" [routerLink] = "['home']" routerLinkActive = "active">Home</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" [routerLink] = "['login']" routerLinkActive = "active">Login</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" [routerLink] = "['register']" routerLinkActive = "active" >Register</a>
-    </li>
-    </ul>
+
+<!--Nav
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">UniTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      col auto start
+      <div class="col-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./homepage"><i class="glyphicon glyphicon-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://time.com/4679996/tech-accessories-gadgets-gift-guide-ideas/">Explore</a>
+          </li>-->
+          
+          <!-- Dropdown -->
+      <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true">
+          Services
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Mouse</a>
+          <li><hr class="dropdown-divider"></li>
+          <a class="dropdown-item" href="#">Laptop</a>
+          <li><hr class="dropdown-divider"></li>
+          <a class="dropdown-item" href="#">Cover</a>
+        </div>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./homepage">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://www.gadgets.in/FAQ/">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><i class=" glyphicon glyphicon-earphone"></i>Contact Us</a>
+          </li>
+          
+        </ul>-->
+        <!--<form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>-->
+      <!--</div>
     </div>
-    </nav>
-<p>ticket works!</p>
+  </div>-->
+    <!--col auto end-->
+  <!--</div>
+</nav>-->
+  <!--nav end-->
+  <!--form start-->
+ 
+
+
+  <mat-toolbar   class="heading">Ticket Registration
+  <span class="example-spacer"></span>
+  <a class="nav-link" aria-current="page" href="./homepage"><i class="glyphicon glyphicon-home"></i></a>
+  <a class="link" aria-current="page" href="./faq">Help</a></mat-toolbar>
+  <br>
+
+  <div class="container ">
+  <form  #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
+
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input name="date" type="date"  [ngModel]="today | date:'yyyy-MM-dd'"  
+      (ngModelChange)="today = $event"    
+      class="form-control form-control-rounded"   required>
+    </div>
+    
+
+    <div class="form-group">
+      <label for="device">Device</label>
+      <select class="form-control" name="device" ngModel required>
+        <option hidden>Please select</option>
+        <option>Charger</option>
+        <option>Battery</option>
+        <option>Earphones</option>
+        <option>USB</option>
+        <option>Others</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+    <label for="category">Category</label>
+    <select class="form-control" name="category" ngModel required>
+      <option hidden>Please select</option>
+      <option>Technical Services</option>
+      <option> Return / Replace</option>
+      <option>Product Support</option>
+      <option>Report a bug</option>
+      <option>Others</option>
+    </select>
+  </div>
+    
+
+  <div class="form-group">
+    <label for="phone">Contact No.</label>
+    <input class="form-control" type="tel"  name="phone" pattern="[0-9]{10}" placeholder="" minLlength="10" maxlength="10" ngModel required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control"  name="email" placeholder="name@example.com" ngModel required email>
+  </div>
+  
+    <div class=" form-group">
+      <label for="desc">Issue Description(min 10 char)</label>
+      <textarea matInput class="form-control" name="desc" style="height:100px" placeholder="Please enter your complete issue details here" required minlength="10" ngModel></textarea>
+    </div>
+    
+  <!--<div class="form-group">
+    <label for="state">Status</label>
+    <select class="form-control" name="state" [(ngModel)]="ticketObj.state" required>
+      <option hidden>Please select</option>
+      <option>Pool</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <select class="form-control" name="message" [(ngModel)]="ticketObj.message" required>
+      <option hidden>Please select</option>
+      <option>NA</option>
+    </select>
+  </div>-->
+  <div class="text-center">
+    <button mat-raised-button class="btn text-center" (click)="submitForm(myForm.value)" [disabled]="!myForm.valid" type="button" >Submit</button>
+  </div>
+    
+  </form>
+</div>
+    <!--<mat-form-field class="example-full-width">
+      <mat-label>Company (disabled)</mat-label>
+      <input matInput disabled value="Google">
+    </mat-form-field>
+  
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>First name</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Long Last Name That Will Be Truncated</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+    </tr></table>
+  
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Address 2</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+    </p>
+  
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Ex. San Francisco">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>State</mat-label>
+        <input matInput placeholder="Ex. California">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Postal Code</mat-label>
+        <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
+        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+      </mat-form-field></td>
+    </tr></table>
+  </form>
+  
+
+  <h3>Ticket Registration</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="dname">Device Name</label>
+    <input type="text" id="dname" name="device name">
+
+    <label for="dtype">Device Type</label>
+    <input type="text" id="dtype" name="device type">
+
+    <label for="country">Category</label>
+    <select id="category" name="category">
+     <option value=""></option>
+      <option value="Mobile">Mobile</option>
+      <option value="Laptop">Laptop</option>
+      <option value="Home Appliances">Home Appliances</option>
+    </select>
+
+    <label for="subject">Issue Description</label>
+    <textarea id="subject" name="subject" placeholder="Write your problem here.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  
+
+
+
+
+
+<footer class="footer footer-dark bg-dark" >
+  
+    <div class="container">
+      <div clas="row py-4 d-flex align-items-center">
+        <div clas="col md-12 text-center"></div>
+        <a href="https:www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https:www.twitter.com/" class="fa fa-twitter"></a>
+        <a href="https:www.google.com/" class="fa fa-google"></a>
+        <a href="https:www.linkedin.com/" class="fa fa-linkedin"></a>
+        <a href="https:www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https:www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https:www.pinterest.com/" class="fa fa-pinterest"></a>
+        <a href="https:www.reddit.com/" class="fa fa-reddit"></a>
+        
+    <div class="copy">
+      <div>copyright @2020</div>
+      <div>current version 1.2.3</div>
+    </div>
+      
+    </div>
+  </div>
+</footer>-->

@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent  {
-
+  hide = true;
   constructor(private router:Router , private snack:MatSnackBar) { }
   alert:boolean=false;
   username:string;
@@ -21,15 +21,21 @@ export class LoginComponent  {
     form.reset();
 
 }
+
+  
+
 logIn(){
-  if (this.username==="admin@gmail.com" || this.password==="admin123"){
+  if (this.username==="user@gmail.com" && this.password==="user123"){
     this.router.navigate(['./homepage']);
     
+  }else {
+     if(this.username==="admin@gmail.com" && this.password==="admin123"){
+      this.router.navigate(['./edit']);
   }
   else{
     /*alert("it works");*/
     /*this.snack.open("Please enter a valid username/password","Cancel")*/
-    alert("Please enter a valid username/password");
+    alert("Incorrect Username/Password");
   }}}
   
-  
+}

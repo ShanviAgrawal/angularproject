@@ -1,0 +1,18 @@
+.heading{
+    background-color: rgb(37, 150, 138) !important;
+  
+    color:white;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+   
+  }
+  .nav-link{
+    font-size: 14px;
+    color: white;
+  }
+  mat-slider {
+    width: 300px;
+  }

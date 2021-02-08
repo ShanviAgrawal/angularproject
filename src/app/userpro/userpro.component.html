@@ -1,0 +1,49 @@
+<mat-toolbar   class="heading"><span class="glyphicon glyphicon-user nav-link "></span>  My Profile
+    <span class="example-spacer"></span>
+    <a class="nav-link" aria-current="page" href="./homepage"><i class="glyphicon glyphicon-home "></i></a>
+</mat-toolbar>
+    <br><br>
+<div class="row">
+    <div class="container col-md-8 col-lg-6 ">
+        
+        
+            <!--left col-->
+        <div class="panel panel-default">
+        <div class="panel-heading">Basic Details
+
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item text-right"><span class="pull-left"><strong class=""> Full Name</strong></span> User</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong class="">Email</strong></span>user@gmail.com</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Contact</strong></span> 8356897845
+                    </li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Country</strong></span> India
+                    </li>         
+          <li class="list-group-item text-right"><span class="pull-left"><strong class="">Joined </strong></span> 14-01-2021
+           
+                  </li>
+        </ul>
+    </div>
+       <div class="panel panel-default">
+         <div class="panel-heading">About
+
+            </div>
+            <div class="panel-body">Interested in collecting different accessories
+
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Your feedback is valuable to us
+            </div>
+      
+            <div class="panel-body">
+            <mat-slider
+            thumbLabel
+            [displayWith]="formatLabel"
+            tickInterval="1"
+            min="1"
+            max="100"></mat-slider>
+          
+            
+          </div>
+      
