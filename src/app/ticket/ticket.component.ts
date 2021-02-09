@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
   templateUrl: './ticket.component.html',
   styleUrls: ['./ticket.component.css']
 })
-export class TicketComponent  implements OnInit{
+export class TicketComponent  {
   form:FormGroup;
   allTicket:Object;
   today: Date;
@@ -21,16 +21,19 @@ export class TicketComponent  implements OnInit{
     "message":''
   };
 
-  constructor(private router:Router, private proService:ProService) {this.today =new Date(); }
+  constructor(private router:Router, private proService:ProService) {
+    this.today =new Date(); 
+  }
+
   submitForm(formObj){
     console.log(formObj);
     this.proService.createTicket(formObj).subscribe((response)=>{
-      this.getLatestTicket();
+      /*this.getLatestTicket();*/console.log("Added");
     })
     this.router.navigate(['./status']);
     this.form.reset();
     }
-  ngOnInit() {
+  /*ngOnInit() {
     
     this.getLatestTicket(); 
   }
@@ -38,7 +41,7 @@ export class TicketComponent  implements OnInit{
     this.proService.getAllTicket().subscribe((response)=>{
       this.allTicket =response
     })
-  }
+  }*/
   
 
   

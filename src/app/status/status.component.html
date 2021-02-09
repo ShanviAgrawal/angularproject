@@ -12,7 +12,8 @@
 <table class="table table-striped "  >
   <thead>
     <tr>
-      <th data-field="date" scope="col">Date</th>
+      <th scope="col">Ticket No</th>
+      <th  scope="col">Date</th>
       <th scope="col">Device</th>
       <th scope="col">Category</th>
       <th scope="col">Contact No.</th>
@@ -26,7 +27,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let ticket of allTicket">
-      
+      <td>  {{ticket.id}} </td>
       <td>  {{ticket.date}}  </td>
       <td>  {{ticket.device}}  </td>
       <td>  {{ticket.category}}  </td>

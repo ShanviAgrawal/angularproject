@@ -4,10 +4,11 @@
     <a class="nav-link active" aria-current="page" href=""><span class="glyphicon glyphicon-off"></span></a>
     </mat-toolbar>
     <br><br>
-    <div class="container">
+    <div class="list ">
       <table class="table table-striped " >
         <thead>
           <tr>
+            <th scope="col">Ticket No</th>
             <th scope="col">Date</th>
             <th scope="col">Device</th>
             <th scope="col">Category</th>
@@ -22,7 +23,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let ticket of allTicket">
-            
+            <td>  {{ticket.id}} </td>
             <td>  {{ticket.date}}  </td>
             <td>  {{ticket.device}}  </td>
             <td>  {{ticket.category}}  </td>

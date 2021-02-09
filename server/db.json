@@ -8,8 +8,28 @@
       "email": "shanvikansal3.sa@gmail.com",
       "desc": "asdfgjjkhjh",
       "id": 8,
-      "state": "Taken",
+      "state": "Resolved",
       "message": "it is in pool we are working"
+    },
+    {
+      "date": "2021-02-09",
+      "device": "USB",
+      "category": "Return / Replace",
+      "phone": "8707648824",
+      "email": "shanvikansal3.sa@gmail.com",
+      "desc": "Not working",
+      "id": 9
+    },
+    {
+      "date": "2021-02-09",
+      "device": "Earphones",
+      "category": "Technical Services",
+      "phone": "4578238945",
+      "email": "shanvikansal3.sa@gmail.com",
+      "desc": "wire is broken",
+      "id": 10,
+      "state": "Resolved",
+      "message": "return policy for this is not available"
     }
   ]
 }

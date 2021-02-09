@@ -19,10 +19,7 @@ export class LoginComponent  {
   onSubmit(form:NgForm){
     console.log(form.value);
     form.reset();
-
-}
-
-  
+  }
 
 logIn(){
   if (this.username==="user@gmail.com" && this.password==="user123"){
@@ -33,8 +30,6 @@ logIn(){
       this.router.navigate(['./edit']);
   }
   else{
-    /*alert("it works");*/
-    /*this.snack.open("Please enter a valid username/password","Cancel")*/
     alert("Incorrect Username/Password");
   }}}
   
