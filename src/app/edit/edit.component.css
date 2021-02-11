@@ -2,7 +2,11 @@
     background-color: rgb(37, 150, 138) !important;
     color:white;
     padding-right: 20px;
+    font-family: 'Segoe Script';
     padding-left: 20px;
+    font-weight: bolder;
+      
+      font-size: 30px;
   }
   .example-spacer {
     flex: 1 1 auto;

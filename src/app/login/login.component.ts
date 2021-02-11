@@ -12,25 +12,28 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent  {
   hide = true;
   constructor(private router:Router , private snack:MatSnackBar) { }
-  alert:boolean=false;
+  mes:boolean=false;
+
   username:string;
   password:string;
 
   onSubmit(form:NgForm){
     console.log(form.value);
-    form.reset();
+    
   }
 
-logIn(){
+logIn(form:NgForm){
   if (this.username==="user@gmail.com" && this.password==="user123"){
-    this.router.navigate(['./homepage']);
+    form.reset();
+    this.router.navigate(['/homepage']);
     
   }else {
      if(this.username==="admin@gmail.com" && this.password==="admin123"){
-      this.router.navigate(['./edit']);
+      form.reset();
+      this.router.navigate(['/edit']);
   }
   else{
-    alert("Incorrect Username/Password");
+    this.mes=true;
   }}}
   
 }

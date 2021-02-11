@@ -1,56 +1,6 @@
-<!--Navbar start-->
+<app-navbar></app-navbar>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">UniTech</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!--col auto start-->
-    <div class="col-auto pull-right">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./homepage"><i class="glyphicon glyphicon-home"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./userpro">My Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://time.com/4679996/tech-accessories-gadgets-gift-guide-ideas/">Explore</a>
-        </li>
-        
-        <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true">
-        Services
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="./faq">Return Services</a>
-        <li><hr class="dropdown-divider"></li>
-        <a class="dropdown-item" href="./faq">Technical Services</a>
-        <li><hr class="dropdown-divider"></li>
-        <a class="dropdown-item" href="./faq">Product Support</a>
-      </div>
-    </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./about">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href=""><span class="glyphicon glyphicon-off"></span></a>
-        </li>
-       
-        
-      </ul>
-    </div>
-  </div>
-</div>
-  <!--col auto end-->
-</div>
-</nav>
 
-<!--Navbar end-->
 <br><br>
 
 <!--header start-->
@@ -70,7 +20,7 @@
             <div class="card-body ">
               <h5 class="card-title">Raise New Service Ticket</h5>
               
-              <a href="./ticket" mat-raised-button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click on the button to raise a new ticket"> <span class="glyphicon glyphicon-plus"></span></a>
+              <a routerLink="/ticket" routerLinkActive="active" mat-raised-button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click on the button to raise a new ticket"> <span class="glyphicon glyphicon-plus"></span></a>
               
             </div>
           </div>
@@ -82,7 +32,7 @@
             <div class="card-body  ">
               <h5 class="card-title">Check Service Ticket</h5>
               
-              <a href="./status" mat-raised-button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click on the button to view all the tickets">My List</a>
+              <a routerLink="/status" routerLinkActive="active" mat-raised-button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click on the button to view all the tickets">My List</a>
             </div>
           </div>
         </div>
@@ -100,26 +50,29 @@
 
     <div class=" copy container col-lg-3 mb-4 pull-left">
       <p>
-        <span class="glyphicon glyphicon-briefcase"></span> Office Address:<br>
-        Angular Academy,TCS Interactive, India<br><br>
-        <span class="glyphicon glyphicon-phone-alt"></span> Contact Details:<br>
+        <span class="glyphicon glyphicon-briefcase"></span>  Office Address:<br>
+        Angular Academy, TCS Interactive, India<br>
+       
+      
+        
+        <span class="glyphicon glyphicon-phone-alt"></span>  Contact Details:<br>
         444-555-666 | 1800-456-789
       </p>
     </div>
 
-    <div class=" copy container col-lg-3 mb-4 pull-right">
-      <p><br>
-        <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2021<br>
+    <div class=" copy1 container col-lg-3 mb-4 pull-right">
+      <p>
+        <span class="glyphicon glyphicon-copyright-mark"></span>  Copyright 2021<br>
         Current Version 1.0.0<br>
         
       </p>
     </div>
   
-    <div class=" container   text-center">
+    <div class=" container text-center align-items-center ">
      
       <div clas="row py-4 d-flex  text-center align-items-center">
         <div class="col md-8 text-center"></div>
-        <p class="copy">Follow Us on Social Media</p>
+        <!--<a  class="copy1">Follow Us on Social Media</a><br>-->
         <a href="https:www.facebook.com/" class="fa fa-facebook"></a>
         <a href="https:www.twitter.com/" class="fa fa-twitter"></a>
         <a href="https:www.google.com/" class="fa fa-google"></a>

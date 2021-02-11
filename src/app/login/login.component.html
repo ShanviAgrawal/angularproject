@@ -2,20 +2,31 @@
   
    
     <mat-card  fxFlex="25">
+
         <mat-toolbar  fxLayoutAlign="center center"  class="heading">UniTech</mat-toolbar>
+
+<mat-error class="error" *ngIf="mes">
+    <br>Invalid username/password
+</mat-error>
         <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" >
             
           <mat-form-field >
                <input matInput type="email" placeholder="Username" data-bs-placement="bottom" title="xyz@abc.com" id="username" name="username" [(ngModel)]="username"  email required>
-          </mat-form-field>
+          <mat-error>
+              Please provide a username
+          </mat-error>
+            </mat-form-field>
 
           <mat-form-field >
               <input  matInput type="password" [type]="hide ? 'password' : 'text'" placeholder="Password" data-bs-placement="bottom" title="min 6 characters" id="password" name="password" [(ngModel)]="password"  minlength="6" required>
+              <mat-error>
+                Please provide a password
+            </mat-error>
                 <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </mat-form-field>
+<br>
 
-
-              <button mat-raised-button color="primary"  type="submit" (click)="logIn()" [disabled]="!authForm.valid">Login</button>
+              <button mat-raised-button   type="submit" (click)="logIn(authForm)" [disabled]="!authForm.valid">Login</button>
             
           </form>   
     </mat-card>

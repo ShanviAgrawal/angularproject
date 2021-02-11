@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
   templateUrl: './ticket.component.html',
   styleUrls: ['./ticket.component.css']
 })
-export class TicketComponent  {
+export class TicketComponent implements OnInit {
   form:FormGroup;
   allTicket:Object;
   today: Date;
@@ -28,12 +28,12 @@ export class TicketComponent  {
   submitForm(formObj){
     console.log(formObj);
     this.proService.createTicket(formObj).subscribe((response)=>{
-      /*this.getLatestTicket();*/console.log("Added");
+      this.getLatestTicket();/*console.log("Added");*/
     })
-    this.router.navigate(['./status']);
+    this.router.navigate(['/status']);
     this.form.reset();
     }
-  /*ngOnInit() {
+  ngOnInit() {
     
     this.getLatestTicket(); 
   }
@@ -41,7 +41,7 @@ export class TicketComponent  {
     this.proService.getAllTicket().subscribe((response)=>{
       this.allTicket =response
     })
-  }*/
+  }
   
 
   

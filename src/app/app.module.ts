@@ -28,6 +28,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { UserproComponent } from './userpro/userpro.component';
 import { EditComponent } from './edit/edit.component';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -48,7 +49,9 @@ import { AboutComponent } from './about/about.component';
    
     EditComponent,
    
-    AboutComponent
+    AboutComponent,
+   
+    NavbarComponent
   ],
   imports: [
     BrowserModule,MatToolbarModule,FormsModule,MatSnackBarModule,MatIconModule,ReactiveFormsModule,MatSelectModule,HttpClientModule,

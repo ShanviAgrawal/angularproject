@@ -21,10 +21,16 @@ background-position: center;
 
 .heading{
     background-color: rgb(37, 150, 138) !important;
-   
+   color: white;
     font-weight: bolder;
     font-family: 'Segoe Script';
     font-size: 30px;
 }
+.mat-raised-button{
+    background-color: rgb(37, 150, 138);
+    color:white;
+}
 
-
+.error{
+    text-align: center;
+}

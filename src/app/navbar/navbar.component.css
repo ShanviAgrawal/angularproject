@@ -1,8 +1,12 @@
 .heading{
     background-color: rgb(37, 150, 138) !important;
     color:white;
+  
     padding-right: 20px;
+    
     padding-left: 20px;
+    
+    
   }
   .example-spacer {
     flex: 1 1 auto;
@@ -17,7 +21,15 @@
     font-size: 14px;
     color: white;
   }
-  .list{
-    margin-left: 50px;
-    margin-right:50px;
+  .logo{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Segoe Script';
   }
+  .nav{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin:0 10px;
+
+}
