@@ -26,12 +26,14 @@ export class TicketComponent implements OnInit {
   }
 
   submitForm(formObj){
-    console.log(formObj);
+    
     this.proService.createTicket(formObj).subscribe((response)=>{
       this.getLatestTicket();/*console.log("Added");*/
     })
+    this.getLatestTicket();
     this.router.navigate(['/status']);
     this.form.reset();
+    
     }
   ngOnInit() {
     

@@ -9,7 +9,7 @@
       "desc": "not fitting",
       "id": 8,
       "state": "Resolved",
-      "message": "it is in pool"
+      "message": "issue fixed"
     },
     {
       "date": "2021-02-09",
@@ -24,62 +24,14 @@
     },
     {
       "date": "2021-02-10",
-      "device": "Others",
-      "category": "Product Support",
-      "phone": "4578963259",
-      "email": "abc@xyz.com",
-      "desc": "bluetooth speaker is not working",
-      "id": 11,
-      "state": "Pool",
-      "message": "we are working"
-    },
-    {
-      "date": "2021-02-10",
       "device": "Earphones",
-      "category": "Report a bug",
-      "phone": "8707648824",
-      "email": "shanvikansal3.sa@gmail.com",
-      "desc": "ghjlfhdgsgs",
-      "id": 12,
-      "state": "Resolved"
-    },
-    {
-      "date": "2021-02-11",
-      "device": "Earphones",
-      "category": "Product Support",
-      "phone": "4578128945",
-      "email": "abc@xyz.com",
-      "desc": "jkfgdgaghlg",
-      "id": 15,
-      "state": "Pool"
-    },
-    {
-      "date": "2021-02-11",
-      "device": "Others",
-      "category": "Product Support",
-      "phone": "8707648824",
-      "email": "shanvikansal3.sa@gmail.com",
-      "desc": "hvgdhjgkjlk;",
-      "id": 18
-    },
-    {
-      "date": "2021-02-11",
-      "device": "Charger",
       "category": "Technical Services",
       "phone": "8707648824",
-      "email": "shanvik.sa@gmail.com",
-      "desc": "lkiuytfchu thik h",
-      "id": 20
-    },
-    {
-      "date": "2021-02-11",
-      "device": "Earphones",
-      "category": "Return / Replace",
-      "phone": "8965467879",
-      "email": "abc@xyz.com",
-      "desc": "think beyond",
-      "id": 21,
-      "state": "Pool"
+      "email": "shanvikansal3.sa@gmail.com",
+      "desc": "one side is not working",
+      "id": 12,
+      "state": "Resolved",
+      "message": "As per the policies you can ask for return /replace"
     },
     {
       "date": "2021-02-11",
@@ -87,17 +39,77 @@
       "category": "Product Support",
       "phone": "4578128945",
       "email": "abc@xyz.com",
-      "desc": "sb thik hai",
-      "id": 22
+      "desc": "not working in particular mobile",
+      "id": 15,
+      "state": "Taken",
+      "message": "we are checking. Please be patient with us."
     },
     {
-      "date": "2021-02-11",
-      "device": "Earphones",
-      "category": "Report a bug",
-      "phone": "4513278982",
+      "date": "2021-02-12",
+      "device": "USB",
+      "category": "Others",
+      "phone": "8813278982",
       "email": "abc@xyz.com",
-      "desc": "ghjhljkghgk",
-      "id": 23
+      "desc": "check final",
+      "id": 34
+    },
+    {
+      "date": "2021-02-12",
+      "device": "Earphones",
+      "category": "Product Support",
+      "phone": "4578128945",
+      "email": "abc@xyz.com",
+      "desc": "check pree",
+      "id": 40
+    },
+    {
+      "date": "2021-02-12",
+      "device": "Battery",
+      "category": "Report a bug",
+      "phone": "4578128945",
+      "email": "abc@xyz.com",
+      "desc": "check latest",
+      "id": 41
+    },
+    {
+      "date": "2021-02-12",
+      "device": "Mouse",
+      "category": "Return / Replace",
+      "phone": "1118128945",
+      "email": "abc@xyz.com",
+      "desc": "received another",
+      "id": 49
+    },
+    {
+      "date": "2021-02-12",
+      "device": "Others",
+      "category": "Others",
+      "phone": "1111111111",
+      "email": "a@g.com",
+      "desc": "othersssss",
+      "id": 50,
+      "state": "Pool",
+      "message": "working"
+    },
+    {
+      "date": "2021-02-12",
+      "device": "USB",
+      "category": "Technical Services",
+      "phone": "6666666666",
+      "email": "t@c.com",
+      "desc": "not required",
+      "id": 51,
+      "state": "Pool",
+      "message": "working on it"
+    },
+    {
+      "date": "2021-02-12",
+      "device": "Earphones",
+      "category": "Technical Services",
+      "phone": "4564564454",
+      "email": "a@t.com",
+      "desc": "adsdsfdfhkjg",
+      "id": 54
     }
   ]
 }

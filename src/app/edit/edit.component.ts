@@ -14,8 +14,11 @@ export class EditComponent implements OnInit {
     "category":'',
     "desc":'',
     "state":'',
-    "message":''
+    "message":'',
+    "id":'',
+    "device":''
   };
+  form: any;
   
   constructor(private proService:ProService, private _snackBar: MatSnackBar) { }
   
@@ -45,11 +48,12 @@ this.proService.deleteTicket(ticket).subscribe(()=>{
   }
   
 
-  updateTicket(){
+  updateTicket(form){
     this.isEdit= !this.isEdit;
     this.proService.updateTicket(this.ticketObj).subscribe(()=>{
       this.getLatestTicket();
 
     })
+    
   }
 }
